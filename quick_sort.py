@@ -114,7 +114,7 @@ def measure_time(array):
 
 import random
 
-GRAPH_FOLDER = os.path.join("graphs", "Merge_Sort")
+GRAPH_FOLDER = os.path.join("graphs", "quick_Sort")
 
 os.makedirs(GRAPH_FOLDER, exist_ok=True)
 
