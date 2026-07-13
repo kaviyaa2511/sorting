@@ -28,10 +28,9 @@ def descending_case(size):
     return list(range(size, 0, -1))
 
 
-# ------------------------------------------------------------
+
 # 4. Partial Order
 # First half sorted, second half random
-# ------------------------------------------------------------
 def partial_order_case(size):
 
     first_half = list(range(1, size // 2 + 1))
@@ -44,11 +43,10 @@ def partial_order_case(size):
     return first_half + second_half
 
 
-# ------------------------------------------------------------
+
 # 5. Missing Number
 # One number is removed from the sequence.
-# Array size becomes (size-1)
-# ------------------------------------------------------------
+
 def missing_number_case(size):
 
     arr = list(range(1, size + 1))
@@ -60,32 +58,10 @@ def missing_number_case(size):
     return arr
 
 
-# ------------------------------------------------------------
-# 6. Missing Number + Duplicate
-# Remove one number and duplicate another.
-# Array size remains same.
-# ------------------------------------------------------------
-def missing_duplicate_case(size):
 
-    arr = list(range(1, size + 1))
-
-    missing = random.randint(1, size)
-
-    arr.remove(missing)
-
-    duplicate = random.choice(arr)
-
-    arr.append(duplicate)
-
-    random.shuffle(arr)
-
-    return arr
-
-
-# ------------------------------------------------------------
 # 7. Duplicate Values
 # Many repeated values.
-# ------------------------------------------------------------
+
 def duplicate_values_case(size):
 
     return [
@@ -94,9 +70,8 @@ def duplicate_values_case(size):
     ]
 
 
-# ------------------------------------------------------------
 # Return all test cases
-# ------------------------------------------------------------
+
 def get_test_cases(size):
 
     return {
@@ -118,15 +93,11 @@ def get_test_cases(size):
     }
 
 
-# ------------------------------------------------------------
 # Input Sizes
-# ------------------------------------------------------------
 INPUT_SIZES = [100, 1000, 10000, 100000]
 
 
-# ------------------------------------------------------------
 # Test Driver
-# ------------------------------------------------------------
 if __name__ == "__main__":
 
     for size in INPUT_SIZES:
