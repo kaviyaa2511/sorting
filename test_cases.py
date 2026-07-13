@@ -1,39 +1,29 @@
-# ------------------------------------------------------------
-# File Name : test_cases.py
-#
+
 # Description:
 # Generates different test cases for sorting algorithms.
-#
+
 # Test Cases:
 # 1. Random
 # 2. Ascending
 # 3. Descending
 # 4. Partial Order
 # 5. Missing Number
-# 6. Missing Number + Duplicate
-# 7. Duplicate Values
-# ------------------------------------------------------------
+# 6. Duplicate Values
 
 import random
 
-
-# ------------------------------------------------------------
 # 1. Random Numbers
-# ------------------------------------------------------------
 def random_case(size):
     return random.sample(range(1, size * 10), size)
 
 
-# ------------------------------------------------------------
+
 # 2. Ascending Order
-# ------------------------------------------------------------
 def ascending_case(size):
     return list(range(1, size + 1))
 
 
-# ------------------------------------------------------------
 # 3. Descending Order
-# ------------------------------------------------------------
 def descending_case(size):
     return list(range(size, 0, -1))
 
